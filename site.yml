@@ -1,0 +1,8 @@
+---
+- name: Provision main machine
+  hosts: localhost
+  remote_user: "{{ lookup('env','USER') }}"
+  become: yes
+
+  roles:
+    - { role: video_editing, tags: video }

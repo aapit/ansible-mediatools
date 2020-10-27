@@ -1,0 +1,8 @@
+---
+- name: Add OpenShot PPA repo
+  apt_repository:
+    repo: ppa:openshot.developers/ppa
+
+- name: Install OpenShot video editor
+  apt:
+    name: openshot-qt
